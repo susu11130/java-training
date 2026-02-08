@@ -1,6 +1,6 @@
 package com.example.chapter03.practice03;
 
-/**
+/*
  * スマホのバッテリー（Battery）を表すクラス。
  * 残量を 0〜100% の範囲で管理します。
  */

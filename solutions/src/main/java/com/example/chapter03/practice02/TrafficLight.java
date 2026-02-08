@@ -1,6 +1,6 @@
 package com.example.chapter03.practice02;
 
-/**
+/*
  * 信号機（TrafficLight）を表すクラス。現在の色を管理して切り替えます。
  */
 public class TrafficLight {

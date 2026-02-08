@@ -1,6 +1,6 @@
 package com.example.game.exception;
 
-/**
+/*
  * 無効な手が入力された場合の例外クラスです。ユーザーが不正な値を入力した際にスローされます。
  */
 public class InvalidHandException extends Exception {

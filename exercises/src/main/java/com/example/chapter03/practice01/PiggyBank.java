@@ -1,6 +1,6 @@
 package com.example.chapter03.practice01;
 
-/**
+/*
  * 貯金箱（PiggyBank）を表すクラス。
  * 持ち主の名前と、現在の合計金額（円）を管理します。
  */

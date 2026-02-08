@@ -4,7 +4,7 @@ import com.example.game.exception.InvalidHandException;
 import java.util.Random;
 import java.util.Scanner;
 
-/**
+/*
  * 手の生成を担当するファクトリクラス。 プレイヤーの手の入力とコンピュータの手の生成を行います。 AutoCloseableを実装し、Scannerのリソース管理を行います。
  */
 public class HandFactory implements AutoCloseable {

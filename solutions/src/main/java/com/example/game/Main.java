@@ -2,7 +2,7 @@ package com.example.game;
 
 import com.example.game.service.RockPaperScissorsService;
 
-/**
+/*
  * じゃんけんゲームのメインクラス。アプリケーションのエントリーポイントを提供します。
  */
 public class Main {

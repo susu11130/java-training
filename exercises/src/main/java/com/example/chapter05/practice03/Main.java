@@ -3,7 +3,7 @@ package com.example.chapter05.practice03;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-/**
+/*
  * 【問題03：日付ライブラリ ― 誕生日まであと何日（LocalDate）】
  * 今日から見て、次の誕生日まで「あと何日」かを表示してください。
  * ただし、今年の誕生日が過ぎている場合は翌年の誕生日を対象とします。

@@ -1,6 +1,6 @@
 package com.example.game.domain;
 
-/**
+/*
  * ゲームの結果を表現するEnum。 WIN（勝ち）、LOSE（負け）、DRAW（引き分け）の3つの結果を定義します。
  */
 public enum GameResult {

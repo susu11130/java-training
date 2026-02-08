@@ -1,6 +1,6 @@
 package com.example.game.domain;
 
-/**
+/*
  * じゃんけんの手を表現するEnum。 ROCK（グー）、PAPER（パー）、SCISSORS（チョキ）の3つの手を定義します。
  */
 public enum Hand {

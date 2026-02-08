@@ -1,6 +1,6 @@
 package com.example.chapter07.practice01;
 
-/**
+/*
  * 鳥クラス。
  */
 public class Bird implements Speakable {

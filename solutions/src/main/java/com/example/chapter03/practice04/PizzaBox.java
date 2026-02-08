@@ -1,6 +1,6 @@
 package com.example.chapter03.practice04;
 
-/**
+/*
  * ピザの箱（PizzaBox）を表すクラス。残りスライス数（0～8）を管理します。
  */
 public class PizzaBox { // 新規作成

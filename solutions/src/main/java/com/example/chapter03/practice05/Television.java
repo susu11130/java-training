@@ -1,6 +1,6 @@
 package com.example.chapter03.practice05;
 
-/**
+/*
  * テレビ（Television）を表すクラス。
  * チャンネルは 1〜12、音量は 0〜100%、ミュートON/OFFを扱います。
  */

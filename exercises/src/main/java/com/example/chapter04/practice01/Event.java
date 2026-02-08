@@ -1,12 +1,12 @@
 package com.example.chapter04.practice01;
 
-/**
+/*
  * カレンダーの予定（Event）を表すクラス。
  * タイトル・所要時間・場所を管理します。
  */
 public class Event {
 
-  /**
+  /*
    * デフォルトのタイトル
    */
   private static final String DEFAULT_TITLE = "no title";

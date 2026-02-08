@@ -1,6 +1,6 @@
 package com.example.chapter03.practice02;
 
-/**
+/*
  * 【問題02：信号機の不具合を直そう（インスタンス化）】
  *
  * これは、信号機（TrafficLight）を作成後、その信号機の色を切り替えて、

@@ -1,6 +1,6 @@
 package com.example.chapter03.practice01;
 
-/**
+/*
  * 【問題01：貯金箱の不具合を直そう（クラス内修正）】
  *
  * これは、持ち主の名前を持つ「貯金箱」（PiggyBank）にお金を入れて、

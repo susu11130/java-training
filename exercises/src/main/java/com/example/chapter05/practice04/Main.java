@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
-/**
+/*
  * 【問題04：オンライン通話の終了時刻を直そう（LocalDateTime / ZonedDateTime）】
  * 東京で 2025-01-15 20:00 開始、所要時間 30 分間のオンライン通話があります。
  * 現在のプログラムは、東京の「現地の通話開始・終了時刻」だけを表示しています。
