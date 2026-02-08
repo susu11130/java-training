@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.function.Supplier;
 
-/**
+/*
  * Optional のよく使うメソッドを一気に練習できる 15 問。
  *
  * ルール:
@@ -14,6 +14,7 @@ import java.util.function.Supplier;
  * - 出力内容はコメントの "▼期待する出力結果" を参考にしてください（順不同と書いてあるものは順不同OK）。
  */
 public class Main {
+
   public static void main(String[] args) {
 
     /*
@@ -245,8 +246,10 @@ public class Main {
       ==========================
     */
     System.out.println("\n【12問目】ネストの安全参照");
-    User u1 = new User("1", new FullName("Taro", "Yamada"), Optional.of(30), Optional.empty(), Optional.of("Tokyo"));
-    User u2 = new User("2", new FullName("Hanako", "Sato"), Optional.empty(), Optional.empty(), Optional.empty());
+    User u1 = new User("1", new FullName("Taro", "Yamada"), Optional.of(30), Optional.empty(),
+        Optional.of("Tokyo"));
+    User u2 = new User("2", new FullName("Hanako", "Sato"), Optional.empty(), Optional.empty(),
+        Optional.empty());
 
     // 以下に回答コードを書いてください
 
@@ -307,13 +310,15 @@ public class Main {
     */
     System.out.println("\n【15問目】応用（Optional + map + orElse）");
     List<User> users = List.of(
-        new User("a1", new FullName("Taro", "Yamada"), Optional.of(20), Optional.empty(), Optional.of("Tokyo")),
-        new User("a2", new FullName("Hanako", "Sato"), Optional.empty(), Optional.of("hanako@example.com"), Optional.empty()),
-        new User("a3", new FullName("Jiro", "Tanaka"), Optional.of(30), Optional.empty(), Optional.of("Osaka"))
+        new User("a1", new FullName("Taro", "Yamada"), Optional.of(20), Optional.empty(),
+            Optional.of("Tokyo")),
+        new User("a2", new FullName("Hanako", "Sato"), Optional.empty(),
+            Optional.of("hanako@example.com"), Optional.empty()),
+        new User("a3", new FullName("Jiro", "Tanaka"), Optional.of(30), Optional.empty(),
+            Optional.of("Osaka"))
     );
 
     // 以下に回答コードを書いてください
-
 
   }
 }

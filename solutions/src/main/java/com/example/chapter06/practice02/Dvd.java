@@ -1,9 +1,10 @@
 package com.example.chapter06.practice02;
 
-/**
+/*
  * DVDクラス。
  */
 public class Dvd extends LibraryItem {
+
   @Override
   public String name() {
     return "DVD";

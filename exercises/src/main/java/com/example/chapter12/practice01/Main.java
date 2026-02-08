@@ -1,6 +1,6 @@
 package com.example.chapter12.practice01;
 
-/**
+/*
  * 【問題01：点数を Grade Enum によって評価しよう】
  * この課題では、試験の点数（0〜100点）から成績を判定する処理を
  * 「if 文と文字列」に頼った脆弱な実装から、
@@ -36,6 +36,7 @@ package com.example.chapter12.practice01;
  * 点数: 120 → IllegalArgumentException: 点数は 0〜100 の範囲で指定してください: 120
  */
 public class Main {
+
   public static void main(String[] args) {
     System.out.println(GradeService.evaluate(95));
     System.out.println(GradeService.evaluate(75));

@@ -3,7 +3,7 @@ package com.example.chapter07.practice01;
 import java.util.Arrays;
 import java.util.List;
 
-/**
+/*
  * 【問題01：動物園の鳴き声案内を直そう（インターフェース／実装／ポリモーフィズム）】
  * このプログラムでは、Animalインターフェースの実装クラスのインスタンスを一つの変数 animal にまとめて
  * それぞれの鳴き声を出力するプログラムなのですが、
@@ -28,6 +28,7 @@ import java.util.List;
  * ・Speakableインターフェースを実装した、新しい動物クラスを定義して、animalsの中に加えて鳴き声を出力してください。
  */
 public class Main {
+
   public static void main(String[] args) {
     // ポリモーフィズムの仕組みを使って、異なる型のインスタンスを一つの変数 animals で管理する。
     List<Speakable> animals = Arrays.asList(

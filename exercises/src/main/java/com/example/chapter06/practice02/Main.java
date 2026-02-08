@@ -27,12 +27,13 @@ package com.example.chapter06.practice02;
  *      (2)で作成した各クラスを new して個別に表示するコードに置き換える。
  */
 public class Main {
+
   public static void main(String[] args) {
     // ★まずは現状出力（完成後もこの出力と完全一致させること）
     int daysLate = 3;
-    printOverdueFine("BOOK",  daysLate);
+    printOverdueFine("BOOK", daysLate);
     printOverdueFine("COMIC", daysLate);
-    printOverdueFine("DVD",   daysLate);
+    printOverdueFine("DVD", daysLate);
 
     // 以下の形に書き換える。
     // Book book = new Book();
@@ -51,9 +52,13 @@ public class Main {
   }
 
   private static String name(String code) {
-    if ("BOOK".equals(code))  return "本";
-    else if ("COMIC".equals(code)) return "コミック";
-    else if ("DVD".equals(code))   return "DVD";
+    if ("BOOK".equals(code)) {
+      return "本";
+    } else if ("COMIC".equals(code)) {
+      return "コミック";
+    } else if ("DVD".equals(code)) {
+      return "DVD";
+    }
     throw new IllegalArgumentException("未知の種類: " + code);
   }
 

@@ -6,7 +6,8 @@ import com.example.game.domain.HandFactory;
 import com.example.game.exception.InvalidHandException;
 
 /*
- * じゃんけんゲームのサービスクラス。ゲームの全体的な流れを制御し、プレイヤーとコンピュータの対戦を管理します。
+ * じゃんけんゲームのサービスクラス。
+ * ゲームの全体的な流れを制御し、プレイヤーとコンピュータの対戦を管理します。
  */
 public class RockPaperScissorsService {
 

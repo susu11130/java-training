@@ -30,10 +30,10 @@ public class Kadai06 {
 
     // 修正：switch「式」で action を代入する。
     String action = switch (signal) {
-      case "GREEN"  -> "進む";
+      case "GREEN" -> "進む";
       case "YELLOW" -> "注意して進む";
-      case "RED"    -> "止まる";
-      default       -> "不明";
+      case "RED" -> "止まる";
+      default -> "不明";
     };
 
     System.out.println("行動: " + action);

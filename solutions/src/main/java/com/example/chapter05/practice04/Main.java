@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
-/**
+/*
  * 【問題04：オンライン通話の終了時刻を直そう（LocalDateTime / ZonedDateTime）】
  * 東京で 2025-01-15 20:00 開始、所要時間 30 分間のオンライン通話があります。
  * 現在のプログラムは、東京の「現地の通話開始・終了時刻」だけを表示しています。
@@ -40,17 +40,21 @@ public class Main {
     // 通話開始・終了時刻（東京）をLocalDateTime → ZonedDateTime に変換する。
     ZoneId tokyoZoneId = ZoneId.of("Asia/Tokyo");
     ZonedDateTime startZonedDateTimeAtTokyo = startLocalDateTimeAtTokyo.atZone(tokyoZoneId);
-    ZonedDateTime endZonedDateTimeAtTokyo   = endLocalDateTimeAtTokyo.atZone(tokyoZoneId);
+    ZonedDateTime endZonedDateTimeAtTokyo = endLocalDateTimeAtTokyo.atZone(tokyoZoneId);
 
     // 追加: 通話開始・終了時刻（ロンドン）を取得。
-    ZoneId londonZoneId  = ZoneId.of("Europe/London");
-    ZonedDateTime startZonedDateTimeAtLondon = startZonedDateTimeAtTokyo.withZoneSameInstant(londonZoneId);
-    ZonedDateTime endZonedDateTimeAtLondon   = endZonedDateTimeAtTokyo.withZoneSameInstant(londonZoneId);
+    ZoneId londonZoneId = ZoneId.of("Europe/London");
+    ZonedDateTime startZonedDateTimeAtLondon =
+        startZonedDateTimeAtTokyo.withZoneSameInstant(londonZoneId);
+    ZonedDateTime endZonedDateTimeAtLondon =
+        endZonedDateTimeAtTokyo.withZoneSameInstant(londonZoneId);
 
     // 追加: 通話開始・終了時刻（シドニー）を取得。
-    ZoneId sydneyZoneId  = ZoneId.of("Australia/Sydney");
-    ZonedDateTime startZonedDateTimeAtSydney = startZonedDateTimeAtTokyo.withZoneSameInstant(sydneyZoneId);
-    ZonedDateTime endZonedDateTimeAtSydney   = endZonedDateTimeAtTokyo.withZoneSameInstant(sydneyZoneId);
+    ZoneId sydneyZoneId = ZoneId.of("Australia/Sydney");
+    ZonedDateTime startZonedDateTimeAtSydney =
+        startZonedDateTimeAtTokyo.withZoneSameInstant(sydneyZoneId);
+    ZonedDateTime endZonedDateTimeAtSydney =
+        endZonedDateTimeAtTokyo.withZoneSameInstant(sydneyZoneId);
 
     // 現地の通話開始・終了時刻を表示する。
     System.out.printf(

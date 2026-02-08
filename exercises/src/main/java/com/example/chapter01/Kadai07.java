@@ -71,8 +71,6 @@ public class Kadai07 {
     */
     int finalPrice = basePrice;
 
-
-
     System.out.println("最終価格: " + finalPrice + "円");
   }
 }

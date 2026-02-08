@@ -19,6 +19,7 @@ package com.example.chapter03.practice01;
  * ・PiggyBank の メソッド label() に不具合がありますので直してください。
  */
 class Main {
+
   public static void main(String[] args) {
     PiggyBank bank = new PiggyBank("太郎");
     bank.deposit(100);

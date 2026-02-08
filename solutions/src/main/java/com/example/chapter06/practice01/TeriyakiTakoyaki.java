@@ -1,6 +1,6 @@
 package com.example.chapter06.practice01;
 
-/**
+/*
  * クラスを新規作成。
  * てりやきたこ焼きクラス。
  */

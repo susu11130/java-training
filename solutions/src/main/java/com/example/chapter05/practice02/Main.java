@@ -2,7 +2,7 @@ package com.example.chapter05.practice02;
 
 import java.util.Random;
 
-/**
+/*
  * 【問題02：じゃんけんCPUが毎回グー → ランダムに直す（Random）】
  * CPU の手が毎回「グー」固定になっているプログラムを、
  * 実行するたびに「グー / チョキ / パー」のいずれかがランダムに出るように直してください。
@@ -22,6 +22,7 @@ import java.util.Random;
  *   2) 0→グー、1→チョキ、2→パー として配列から取り出す
  */
 public class Main {
+
   public static void main(String[] args) {
     String[] hands = {"グー", "チョキ", "パー"};
 

@@ -22,6 +22,7 @@ package com.example.chapter03.practice03;
  *   メソッドの仕様：現在の残量を「バッテリー: X%」の形式で表示します。
  */
 class Main {
+
   public static void main(String[] args) {
     // ケース1：初期値 -10 → コンストラクタのガードで 0 に修正
     Battery b1 = new Battery(-10);

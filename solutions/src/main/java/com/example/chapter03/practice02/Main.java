@@ -23,6 +23,7 @@ package com.example.chapter03.practice02;
  * ・Main のメソッド main() で、信号機を合計 3 つ（赤、黄、青）インスタンス化して、1回進めてから結果を表示してください。
  */
 class Main {
+
   public static void main(String[] args) {
     // 1つ目：赤で作って1回進める → 青になる
     TrafficLight t1 = new TrafficLight("赤");
@@ -38,6 +39,5 @@ class Main {
     TrafficLight t3 = new TrafficLight("黄"); // 修正：3台目を追加
     t3.next();                                 // 修正：1回進める
     System.out.println(t3.label());            // 期待: 信号: 赤
-
   }
 }

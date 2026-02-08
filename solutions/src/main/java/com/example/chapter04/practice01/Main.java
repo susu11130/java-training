@@ -31,6 +31,7 @@ package com.example.chapter04.practice01;
  * ・Mainクラス の mainメソッドのコメントに従って、予定を合計 4 件作成し、addMinutesメソッド で加算後に labelメソッド を使用して結果を表示してください。
  */
 class Main {
+
   public static void main(String[] args) {
     // 1件目: 全てデフォルト（予定: no title, 所要時間: 30分, 場所: オンライン）で予定を作成する。
     Event e1 = new Event();

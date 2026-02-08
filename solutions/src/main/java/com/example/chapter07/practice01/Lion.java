@@ -1,6 +1,6 @@
 package com.example.chapter07.practice01;
 
-/**
+/*
  * ライオンクラス。
  */
 public class Lion implements Speakable {

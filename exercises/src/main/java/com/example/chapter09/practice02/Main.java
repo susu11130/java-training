@@ -2,7 +2,7 @@ package com.example.chapter09.practice02;
 
 import java.util.Scanner;
 
-/**
+/*
  * 【問題02：出席番号検索（try-with-resources への書き換え）】
  * このプログラムは、0〜4 の数値を入力として受け取り、
  * 配列 names の該当要素を表示します。
@@ -33,6 +33,7 @@ import java.util.Scanner;
  * ・try-with-resources はブロックを抜けたタイミングで自動的に close() が呼ばれる。
  */
 public class Main {
+
   public static void main(String[] args) {
     String[] names = {"田中", "佐藤", "鈴木", "高橋", "伊藤"};
 

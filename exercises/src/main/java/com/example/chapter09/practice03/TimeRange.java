@@ -1,6 +1,7 @@
 package com.example.chapter09.practice03;
 
 public class TimeRange {
+
   private final int start;
   private final int end;
 

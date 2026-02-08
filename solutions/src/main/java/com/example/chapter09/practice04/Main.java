@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
 
-/**
+/*
  * 【問題04：日付文字列をパースしよう（throws でチェック例外を伝える）】
  * これは、"yyyy/MM/dd" 形式の日付文字列を LocalDate 型に変換するプログラムです。
  * 変換には SimpleDateFormat#parse を利用します。
@@ -31,6 +31,7 @@ import java.util.Date;
  * 日付の形式が不正です
  */
 public class Main {
+
   public static void main(String[] args) {
     try { // 修正。ParseException を捕捉するために try-catch を追加。
       LocalDate d1 = parseDate("2025/09/16"); // 修正。throws ParseException に対応するため try 内に記述。
@@ -50,7 +51,8 @@ public class Main {
    * @return 変換後の LocalDate 型インスタンス
    * @throws ParseException 変換に失敗した場合
    */
-  public static LocalDate parseDate(String text) throws ParseException { // 修正。throws ParseException を追加。
+  public static LocalDate parseDate(String text)
+      throws ParseException { // 修正。throws ParseException を追加。
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
     Date parsed = sdf.parse(text);
     return parsed.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();

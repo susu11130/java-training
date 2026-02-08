@@ -5,7 +5,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 /*
- * 手の生成を担当するファクトリクラス。 プレイヤーの手の入力とコンピュータの手の生成を行います。 AutoCloseableを実装し、Scannerのリソース管理を行います。
+ * 手の生成を担当するファクトリクラス。
+ * プレイヤーの手の入力とコンピュータの手の生成を行います。
+ * AutoCloseableを実装し、Scannerのリソース管理を行います。
  */
 public class HandFactory implements AutoCloseable {
 
@@ -13,7 +15,7 @@ public class HandFactory implements AutoCloseable {
   private final Random random;
 
   /**
-   * コンストラクタ。 ScannerとRandomのインスタンスを初期化します。
+   * コンストラクタ。ScannerとRandomのインスタンスを初期化します。
    */
   public HandFactory() {
     this.scanner = new Scanner(System.in);
@@ -21,7 +23,7 @@ public class HandFactory implements AutoCloseable {
   }
 
   /**
-   * プレイヤーの手を取得します。 標準入力から数値を受け取り、対応する手を返します。
+   * プレイヤーの手を取得します。標準入力から数値を受け取り、対応する手を返します。
    *
    * @return プレイヤーの手
    * @throws InvalidHandException 無効な入力が行われた場合
@@ -34,7 +36,7 @@ public class HandFactory implements AutoCloseable {
   }
 
   /**
-   * コンピュータの手を生成します。 ランダムに手を選択して返します。
+   * コンピュータの手を生成します。ランダムに手を選択して返します。
    *
    * @return コンピュータの手
    */
@@ -43,7 +45,7 @@ public class HandFactory implements AutoCloseable {
   }
 
   /**
-   * 入力値を検証します。 文字列を数値に変換し、有効な手に変換します。
+   * 入力値を検証します。文字列を数値に変換し、有効な手に変換します。
    *
    * @param input 入力文字列
    * @return 検証済みの手
@@ -65,7 +67,7 @@ public class HandFactory implements AutoCloseable {
   }
 
   /**
-   * リソースをクローズします。 Scannerを安全にクローズします。
+   * リソースをクローズします。Scannerを安全にクローズします。
    */
   @Override
   public void close() {

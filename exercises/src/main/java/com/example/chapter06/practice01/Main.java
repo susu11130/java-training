@@ -25,12 +25,13 @@ package com.example.chapter06.practice01;
  *  - オーバーライドの条件は「メソッド名・引数・戻り値の型が完全一致」です。
  */
 public class Main {
-    public static void main(String[] args) {
-      CheeseTakoyaki cheese = new CheeseTakoyaki();
-      NegiTakoyaki negi = new NegiTakoyaki();
 
-      // 不具合：現在は「チーズたこ焼き」が「たこやき」と表示される
-      System.out.println(cheese.displayName() + ": " + cheese.total() + "円");
-      System.out.println(negi.displayName() + ": " + negi.total() + "円");
-    }
+  public static void main(String[] args) {
+    CheeseTakoyaki cheese = new CheeseTakoyaki();
+    NegiTakoyaki negi = new NegiTakoyaki();
+
+    // 不具合：現在は「チーズたこ焼き」が「たこやき」と表示される
+    System.out.println(cheese.displayName() + ": " + cheese.total() + "円");
+    System.out.println(negi.displayName() + ": " + negi.total() + "円");
+  }
 }

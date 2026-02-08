@@ -3,7 +3,7 @@ package com.example.chapter08.practice03;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-/**
+/*
  * 【問題03：自習室チェックイン（Set の基本操作）】
  * これは自習室（全10席）で、座席番号のチェックイン／キャンセルを管理するプログラムです。
  * 次の順に処理を行います。
@@ -92,11 +92,12 @@ import java.util.Set;
  * ・バリデーション（範囲チェック）とメッセージ分岐
  */
 public class Main {
+
   /**
    * 自習室の総席数（1～TOTAL_SEATS が有効）
    */
   private static final int TOTAL_SEATS = 10;
-  
+
   public static void main(String[] args) {
     Set<Integer> reserved = new LinkedHashSet<>();
 
@@ -142,10 +143,10 @@ public class Main {
     reserved.add(5);
   }
 
-  /**
+  /*
    * 指定された座席番号でチェックインする。
-   * ・指定された座席番号が範囲外（1~10以外）の場合 → 「席[〇] は無効な席番号です。」と表示する。
-   * ・指定された座席番号が既にSetの中に存在する場合 → 「席[〇] はすでに予約済みです。」と表示する。
+   * ・指定された座席番号が範囲外（1～10以外）の場合 → 「席[〇] は無効な席番号です。」と表示する。
+   * ・指定された座席番号が既に Set内に存在する場合 → 「席[〇] はすでに予約済みです。」と表示する。
    * ・上記以外（追加成功）の場合 → 「席[〇] を予約しました。」と表示する。
    *
    * @param reserved 予約済み座席番号のSet

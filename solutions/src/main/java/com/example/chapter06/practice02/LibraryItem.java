@@ -1,6 +1,6 @@
 package com.example.chapter06.practice02;
 
-/**
+/*
  * 図書館アイテムを表す抽象クラス。
  */
 public abstract class LibraryItem {

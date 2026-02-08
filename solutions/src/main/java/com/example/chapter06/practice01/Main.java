@@ -1,6 +1,6 @@
 package com.example.chapter06.practice01;
 
-/**
+/*
  * 【問題01：たこ焼き屋さんの表示名を直そう（継承 / オーバーライド / 抽象クラス）】
  * たこ焼きの基本料金は 400 円です。各トッピングで「追加料金」と「表示名（name）」が異なります。
  * 現在のプログラムでは、出力が「たこやき: 500円」になってしまう不具合があります。これを修正してください。
@@ -25,13 +25,14 @@ package com.example.chapter06.practice01;
  *  - オーバーライドの条件は「メソッド名・引数・戻り値の型が完全一致」です。
  */
 public class Main {
-    public static void main(String[] args) {
-      CheeseTakoyaki cheese = new CheeseTakoyaki();
-      NegiTakoyaki negi = new NegiTakoyaki();
-      TeriyakiTakoyaki teriyaki = new TeriyakiTakoyaki(); // 追加。自作クラスをインスタンス化。
 
-      System.out.println(cheese.displayName() + ": " + cheese.total() + "円");
-      System.out.println(negi.displayName() + ": " + negi.total() + "円");
-      System.out.println(teriyaki.displayName() + ": " + teriyaki.total() + "円"); // 追加。自作クラスも出力。
-    }
+  public static void main(String[] args) {
+    CheeseTakoyaki cheese = new CheeseTakoyaki();
+    NegiTakoyaki negi = new NegiTakoyaki();
+    TeriyakiTakoyaki teriyaki = new TeriyakiTakoyaki(); // 追加。自作クラスをインスタンス化。
+
+    System.out.println(cheese.displayName() + ": " + cheese.total() + "円");
+    System.out.println(negi.displayName() + ": " + negi.total() + "円");
+    System.out.println(teriyaki.displayName() + ": " + teriyaki.total() + "円"); // 追加。自作クラスも出力。
+  }
 }

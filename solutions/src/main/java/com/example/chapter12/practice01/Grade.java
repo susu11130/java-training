@@ -2,7 +2,7 @@ package com.example.chapter12.practice01;
 
 import java.util.Arrays;
 
-/**
+/*
  * グレードを表すEnum。
  */
 public enum Grade {
@@ -91,8 +91,7 @@ public enum Grade {
   }
 
   /**
-   * 点数から適切なGradeを返す。
-   * 範囲外は IllegalArgumentException を投げる。
+   * 点数から適切なGradeを返す。 範囲外は IllegalArgumentException を投げる。
    *
    * @param score 点数
    * @return Grade

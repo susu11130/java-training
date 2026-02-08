@@ -73,12 +73,16 @@ public class Television { // 新規作成
     }
   }
 
-  /** ミュートをONにします。 */
+  /**
+   * ミュートをONにします。
+   */
   public void mute() { // 新規作成
     this.muted = true;
   }
 
-  /** ミュートをOFFにします。 */
+  /**
+   * ミュートをOFFにします。
+   */
   public void unmute() { // 新規作成
     this.muted = false;
   }

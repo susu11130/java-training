@@ -20,6 +20,7 @@ package com.example.chapter05.practice02;
  *   2) 0→グー、1→チョキ、2→パー として配列から取り出す
  */
 public class Main {
+
   public static void main(String[] args) {
     String[] hands = {"グー", "チョキ", "パー"};
 

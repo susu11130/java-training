@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-/**
+/*
  * 【問題01：朝読書の本リストを整理しよう（Listの基本操作）】
  * このプログラムでは、List を使った本リストの基本操作（add / get / sort / remove / size）を練習します。
  * 具体的には以下の順番で処理をしています。
@@ -69,6 +69,7 @@ import java.util.List;
  *
  */
 public class Main {
+
   public static void main(String[] args) {
     List<String> books = new ArrayList<>();
 

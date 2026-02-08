@@ -1,9 +1,10 @@
 package com.example.chapter06.practice02;
 
-/**
+/*
  * コミッククラス。
  */
 public class Comic extends LibraryItem {
+
   @Override
   public String name() {
     return "コミック";

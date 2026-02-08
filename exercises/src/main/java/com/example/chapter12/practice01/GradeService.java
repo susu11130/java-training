@@ -1,6 +1,7 @@
 package com.example.chapter12.practice01;
 
 class GradeService {
+
   public static String evaluate(int score) {
     String grade;
     if (score >= 90) {

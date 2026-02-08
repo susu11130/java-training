@@ -1,7 +1,7 @@
 package com.example.chapter09.practice03;
 
 
-/**
+/*
  * 【問題03：時間帯クラスのガード処理を実装しよう（throw new 例外クラス）】
  * この課題では、開始時刻と終了時刻を表す TimeRange クラスの
  * 「コンストラクタのガード処理（不正引数なら例外を投げる）」を実装します。
@@ -29,6 +29,7 @@ package com.example.chapter09.practice03;
  *      → IllegalArgumentException: start < end となるように指定してください。
  */
 public class Main {
+
   public static void main(String[] args) {
     System.out.println(new TimeRange(9, 17).format());   // 正常系 → 「開始時刻：9、終了時刻：17」
     System.out.println(new TimeRange(25, 10).format());  // 異常系: 範囲外（0〜23以外）→ 例外スロー

@@ -3,7 +3,7 @@ package com.example.chapter11;
 import java.util.Objects;
 import java.util.Optional;
 
-/**
+/*
  * ユーザーを表すクラス。
  */
 public final class User {
@@ -36,11 +36,11 @@ public final class User {
   /**
    * コンストラクタ。
    *
-   * @param id ID
-   * @param name 氏名
-   * @param age 年齢
+   * @param id    ID
+   * @param name  氏名
+   * @param age   年齢
    * @param email メールアドレス
-   * @param city 住所
+   * @param city  住所
    */
   public User(
       String id,
@@ -75,8 +75,7 @@ public final class User {
   }
 
   /**
-   * 年齢を返す。
-   * 値がない場合は、Optional.empty()を返す。
+   * 年齢を返す。 値がない場合は、Optional.empty()を返す。
    *
    * @return 年齢
    */
@@ -85,8 +84,7 @@ public final class User {
   }
 
   /**
-   * メールアドレスを返す。
-   * 値がない場合は、Optional.empty()を返す。
+   * メールアドレスを返す。 値がない場合は、Optional.empty()を返す。
    *
    * @return メールアドレス
    */
@@ -95,8 +93,7 @@ public final class User {
   }
 
   /**
-   * 住所（都市）を返す。
-   * 値がない場合は、Optional.empty()を返す。
+   * 住所（都市）を返す。 値がない場合は、Optional.empty()を返す。
    *
    * @return 住所（都市）
    */

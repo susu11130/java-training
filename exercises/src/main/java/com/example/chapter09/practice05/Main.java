@@ -2,7 +2,7 @@ package com.example.chapter09.practice05;
 
 import java.time.LocalDate;
 
-/**
+/*
  * 【問題05：ホテル予約バリデーション（非チェック例外クラスを自作する）】
  * こちらは、チェックイン日とチェックアウト日をもとにホテルの予約を作成して、その予約内容を表示するプログラムです。
  * 現在は、
@@ -35,6 +35,7 @@ import java.time.LocalDate;
  * ・テストの再現性のため、TODAY は 2025-09-17 に固定されています。
  */
 public class Main {
+
   public static void main(String[] args) {
     ReservationService service = new ReservationService();
 

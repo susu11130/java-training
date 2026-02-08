@@ -27,6 +27,7 @@ import java.time.temporal.ChronoUnit;
  * LocalDateインスタンス同士の日付の比較は isAfter(...), isBefore(...)を使用できます。
  */
 public class Main {
+
   public static void main(String[] args) {
     // 今日の日付
     LocalDate today = LocalDate.now();
@@ -39,7 +40,7 @@ public class Main {
 
     // 誕生日を作る。
     // もし今日と比べて、今年の誕生日が過ぎていたら、翌年の誕生日を代入する。過ぎていなければ今年の誕生日を代入する。
-     LocalDate nextBirthday = LocalDate.of(today.getYear(), month, day); // 不具合あり
+    LocalDate nextBirthday = LocalDate.of(today.getYear(), month, day); // 不具合あり
 
     // 今日から誕生日までの期間インスタンスを取得する。
     long days = ChronoUnit.DAYS.between(today, nextBirthday);

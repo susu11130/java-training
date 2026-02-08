@@ -2,7 +2,7 @@ package com.example.chapter11;
 
 import java.util.Objects;
 
-/**
+/*
  * 氏名を表すクラス。
  */
 public final class FullName {
@@ -21,7 +21,7 @@ public final class FullName {
    * コンストラクタ。
    *
    * @param firstName 名
-   * @param lastName 姓
+   * @param lastName  姓
    */
   public FullName(String firstName, String lastName) {
     this.firstName = Objects.requireNonNull(firstName);

@@ -64,6 +64,7 @@ package com.example.chapter03.practice05;
  *       例：「チャンネル: 5 / 音量: 40% / ミュート: OFF」
  */
 class Main {
+
   public static void main(String[] args) {
     // ケース1：初期チャンネル 0（→1 に丸め）、音量 95（そのまま）
     Television tv1 = new Television(0, 95);

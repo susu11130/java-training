@@ -40,7 +40,7 @@ public class Main {
     // 通話開始・終了時刻（東京）をLocalDateTime → ZonedDateTime に変換する。
     ZoneId tokyoZoneId = ZoneId.of("Asia/Tokyo");
     ZonedDateTime startZonedDateTimeAtTokyo = startLocalDateTimeAtTokyo.atZone(tokyoZoneId);
-    ZonedDateTime endZonedDateTimeAtTokyo   = endLocalDateTimeAtTokyo.atZone(tokyoZoneId);
+    ZonedDateTime endZonedDateTimeAtTokyo = endLocalDateTimeAtTokyo.atZone(tokyoZoneId);
 
     // 現地の通話開始・終了時刻を表示する。
     System.out.printf(

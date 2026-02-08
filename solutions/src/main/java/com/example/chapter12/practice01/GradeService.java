@@ -1,6 +1,7 @@
 package com.example.chapter12.practice01;
 
 class GradeService {
+
   public static String evaluate(int score) {
     Grade g = Grade.fromScore(score); // 修正。Enumの静的メソッドで評価を取得。
 

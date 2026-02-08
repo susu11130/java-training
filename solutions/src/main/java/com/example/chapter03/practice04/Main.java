@@ -28,6 +28,7 @@ package com.example.chapter03.practice04;
  *        メソッドの仕様：「残り: X切れ」の形式で返す（例：残り: 6切れ）
  */
 class Main {
+
   public static void main(String[] args) {
     // ケース1：初期値 10 → コンストラクタのガードで 8 に修正 → 2 切れ食べて 6
     PizzaBox box1 = new PizzaBox(10);

@@ -5,12 +5,13 @@ package com.example.chapter03.practice04;
  */
 public class PizzaBox { // 新規作成
 
-  /** 残りスライス数（0～8） */
+  /**
+   * 残りスライス数（0～8）
+   */
   private int slices; // 新規作成
 
   /**
-   * コンストラクタ。初期スライス数を指定します。
-   * 0 未満は 0、8 超えは 8 に丸めます。
+   * コンストラクタ。初期スライス数を指定します。 0 未満は 0、8 超えは 8 に丸めます。
    *
    * @param initialSlices 初期スライス数
    */

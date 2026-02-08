@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Date;
 
-/**
+/*
  * 【問題04：日付文字列をパースしよう（throws でチェック例外を伝える）】
  * これは、"yyyy/MM/dd" 形式の日付文字列を LocalDate 型に変換するプログラムです。
  * 変換には SimpleDateFormat#parse を利用します。
@@ -30,6 +30,7 @@ import java.util.Date;
  * 日付の形式が不正です
  */
 public class Main {
+
   public static void main(String[] args) {
     Date d1 = parseDate("2025/09/16"); // 期待するフォーマットであるため、変換に成功する。
     System.out.println(d1);

@@ -6,7 +6,7 @@ package com.example.chapter04.practice01;
  */
 public class Event {
 
-  /*
+  /**
    * デフォルトのタイトル
    */
   private static final String DEFAULT_TITLE = "no title";
@@ -42,8 +42,7 @@ public class Event {
   static int totalEvents = 0;
 
   /**
-   * コンストラクタ。
-   * デフォルトの予定を作成する。
+   * コンストラクタ。 デフォルトの予定を作成する。
    */
   public Event() {
     this.title = DEFAULT_TITLE;
@@ -52,9 +51,7 @@ public class Event {
   }
 
   /**
-   * コンストラクタ。
-   * タイトルは引数の値を設定する。
-   * 所要時間と場所はデフォルト値を設定する。
+   * コンストラクタ。 タイトルは引数の値を設定する。 所要時間と場所はデフォルト値を設定する。
    *
    * @param title タイトル
    */
@@ -65,11 +62,9 @@ public class Event {
   }
 
   /**
-   * コンストラクタ。
-   * タイトルと所要時間は引数の値を設定する。
-   * 場所はデフォルト値を設定する。
+   * コンストラクタ。 タイトルと所要時間は引数の値を設定する。 場所はデフォルト値を設定する。
    *
-   * @param title タイトル
+   * @param title   タイトル
    * @param minutes 所要時間
    */
   public Event(String title, int minutes) {
@@ -77,10 +72,9 @@ public class Event {
   }
 
   /**
-   * コンストラクタ。
-   * タイトルと所要時間と場所は引数の値を設定する。
+   * コンストラクタ。 タイトルと所要時間と場所は引数の値を設定する。
    *
-   * @param title タイトル
+   * @param title   タイトル
    * @param minutes 所要時間
    */
   public Event(String title, int minutes, String location) {
@@ -104,8 +98,7 @@ public class Event {
   }
 
   /**
-   * 表示用の文字列を取得する。
-   * （例: "予定: 予定のタイトル, 所要時間: 45分, 場所: オンライン"）
+   * 表示用の文字列を取得する。 （例: "予定: 予定のタイトル, 所要時間: 45分, 場所: オンライン"）
    *
    * @return 表示用の文字列
    */

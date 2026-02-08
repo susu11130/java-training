@@ -1,6 +1,6 @@
 package com.example.chapter07.practice01;
 
-/**
+/*
  * 猫クラス。
  */
 public class Cat implements Speakable {

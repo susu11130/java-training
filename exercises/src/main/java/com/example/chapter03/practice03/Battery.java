@@ -6,12 +6,13 @@ package com.example.chapter03.practice03;
  */
 public class Battery {
 
-  /** バッテリー残量（0〜100%） */
+  /**
+   * バッテリー残量（0〜100%）
+   */
   private int percentage;
 
   /**
-   * コンストラクタ。
-   * 初期残量を指定してバッテリーを作ります。
+   * コンストラクタ。 初期残量を指定してバッテリーを作ります。
    *
    * @param initial 初期残量（%）
    */

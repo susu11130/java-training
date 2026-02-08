@@ -3,7 +3,7 @@ package com.example.chapter07.practice02;
 import java.util.Locale;
 
 /**
- * 税込10%（四捨五入）で計算し、末尾に「円」を付けて表示するフォーマッタ
+ * 税込10%（四捨五入）で計算し、末尾に「円」を付けて表示するフォーマッタ。
  */
 public class TaxIncludedFormatter implements PriceFormatter {
 

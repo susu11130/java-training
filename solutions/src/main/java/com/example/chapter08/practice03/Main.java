@@ -3,7 +3,7 @@ package com.example.chapter08.practice03;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-/**
+/*
  * 【問題03：自習室チェックイン（Set の基本操作）】
  * これは自習室（全10席）で、座席番号のチェックイン／キャンセルを管理するプログラムです。
  * 次の順に処理を行います。
@@ -92,6 +92,7 @@ import java.util.Set;
  * ・バリデーション（範囲チェック）とメッセージ分岐
  */
 public class Main {
+
   /**
    * 自習室の総席数（1～TOTAL_SEATS が有効）
    */
@@ -142,10 +143,10 @@ public class Main {
     reserved.add(5);
   }
 
-  /**
+  /*
    * 指定された座席番号でチェックインする。
    * ・指定された座席番号が範囲外（1～10以外）の場合 → 「席[〇] は無効な席番号です。」と表示する。
-   * ・指定された座席番号が既に Set 内に存在する場合 → 「席[〇] はすでに予約済みです。」と表示する。
+   * ・指定された座席番号が既に Set内に存在する場合 → 「席[〇] はすでに予約済みです。」と表示する。
    * ・上記以外（追加成功）の場合 → 「席[〇] を予約しました。」と表示する。
    *
    * @param reserved 予約済み座席番号のSet
@@ -153,14 +154,16 @@ public class Main {
    */
   private static void checkIn(Set<Integer> reserved, int seatNo) {
     if (seatNo < 1 || seatNo > TOTAL_SEATS) { // 追加。1～TOTAL_SEATS の範囲チェックという仕様のため、無効番号は登録せずに弾くよう追加。
-      System.out.println("席[" + seatNo + "] は無効な席番号です。"); // 追加。範囲外はエラーメッセージを表示する仕様のため、文言を追加。
+      System.out.println(
+          "席[" + seatNo + "] は無効な席番号です。"); // 追加。範囲外はエラーメッセージを表示する仕様のため、文言を追加。
       return; // 追加。無効番号は以降の処理を行わない仕様のため、早期リターンを追加。
     }
     boolean added = reserved.add(seatNo); // 修正。重複を物理的に防ぐ仕様のため、無条件 add から戻り値で可否を判定する処理に修正。
     if (added) {
       System.out.println("席[" + seatNo + "] を予約しました。"); // 修正。成功時のみ成功メッセージを出す仕様のため、修正。
     } else {
-      System.out.println("席[" + seatNo + "] はすでに予約済みです。"); // 追加。重複時は警告メッセージを表示する仕様のため、分岐を追加。
+      System.out.println(
+          "席[" + seatNo + "] はすでに予約済みです。"); // 追加。重複時は警告メッセージを表示する仕様のため、分岐を追加。
     }
   }
 

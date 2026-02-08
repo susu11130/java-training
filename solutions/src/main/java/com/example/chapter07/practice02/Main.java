@@ -1,6 +1,6 @@
 package com.example.chapter07.practice02;
 
-/**
+/*
  * 【問題02：おこづかいの金額表示を完成させよう（インターフェース／実装の差し替え）】
  * このプログラムは、PriceFormatter インターフェースの実装を差し替えて
  * 同じ金額を別々の表記で表示する練習です。
@@ -39,6 +39,7 @@ package com.example.chapter07.practice02;
  * ・円記号は半角の '¥' を使いましょう。
  */
 public class Main {
+
   public static void main(String[] args) {
     // 金額 980 の出力
     printAllFormats(980);

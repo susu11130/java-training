@@ -1,17 +1,18 @@
 package com.example.chapter08.practice02;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/**
+/*
  * 【問題02：学食メニュー価格管理（Mapの基本操作ぜんぶ練習）】
  * このプログラムでは、学食の「メニュー名 → 価格（税抜）」を Map で管理します。
  * 次の流れで操作し、Map のよく使うメソッドを一通り練習することが目的です（全6ステップ）。
- * (1)初期メニューを登録する。
- * (2)初期メニューの一覧を出力する。
- * (3)既存メニューの価格を更新し、新メニューを追加する。
- * (4)未登録メニューの価格取得では既定値を使って表示する。
- * (5)すべての価格を税込10%に一括変換したあと、合計金額を表示する。
- * (6)最後にメニューを全消去する。
+ * (1) 初期メニューを登録する。
+ * (2) 初期メニューの一覧を出力する。
+ * (3) 既存メニューの価格を更新し、新メニューを追加する。
+ * (4) 未登録メニューの価格取得では既定値を使って表示する。
+ * (5) すべての価格を税込10%に一括変換したあと、合計金額を表示する。
+ * (6) 最後にメニューを全消去する。
  *
  * しかし、今のコードには不具合・未実装が含まれており、期待される出力がされていません。
  * 下の「▼指示」に従って修正し、期待される出力結果になるようにしてください。
@@ -79,6 +80,7 @@ import java.util.Map;
  * ・「更新」と「新規追加」を使い分けることができる。
  */
 public class Main {
+
   public static void main(String[] args) {
     // 追加順で出力したいので LinkedHashMap を使用（Map の実装は自由に差し替え可）
     Map<String, Integer> menu = new LinkedHashMap<>();
@@ -130,7 +132,7 @@ public class Main {
    * メニューの件数と、各メニューのメニュー名・価格を表示する。
    *
    * @param title 見出しタイトル（例：「メニュー（税抜・初期）」）
-   * @param menu キー：メニュー名, 値：価格のマップ
+   * @param menu  キー：メニュー名, 値：価格のマップ
    */
   private static void printMenu(String title, Map<String, Integer> menu) {
     System.out.println(title + ": " + menu.size() + "件");
@@ -140,8 +142,8 @@ public class Main {
   /**
    * 既存メニューは価格を更新し、未登録メニューは新規追加する。
    *
-   * @param menu キー：メニュー名, 値：価格のマップ
-   * @param name メニュー名
+   * @param menu  キー：メニュー名, 値：価格のマップ
+   * @param name  メニュー名
    * @param price 価格（税抜）
    */
   private static void addOrUpdate(Map<String, Integer> menu, String name, int price) {

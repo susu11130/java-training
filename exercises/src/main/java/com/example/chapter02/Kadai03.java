@@ -24,7 +24,7 @@ public class Kadai03 {
     int total = 0;
 
     for (int i = 0; i <= stocks.length; i++) {
-      total =+ stocks[i];
+      total = +stocks[i];
     }
 
     System.out.println("在庫の合計: " + total);

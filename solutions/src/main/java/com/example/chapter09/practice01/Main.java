@@ -2,7 +2,7 @@ package com.example.chapter09.practice01;
 
 import java.util.Scanner;
 
-/**
+/*
  * 【問題01：出席番号検索（try-catchで入力エラーを出し分けよう）】
  * このプログラムは、0〜4 の数値を入力として受け取り、
  * 配列 names の該当要素を表示します。
@@ -40,6 +40,7 @@ import java.util.Scanner;
  * ・tryブロックは、必要最小限の範囲を囲むようにすると、読みやすいコードになります。
  */
 public class Main {
+
   public static void main(String[] args) {
     String[] names = {"田中", "佐藤", "鈴木", "高橋", "伊藤"};
 

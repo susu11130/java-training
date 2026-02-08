@@ -1,6 +1,6 @@
 package com.example.chapter06.practice02;
 
-/**
+/*
  * 【問題02：図書館の延滞料金プログラムを継承で直そう（継承 / オーバーライド / 抽象クラス）】
  *
  * 図書館で「延滞日数」から「延滞料金（円）」を計算して表示します。
@@ -33,6 +33,7 @@ package com.example.chapter06.practice02;
  * ・仕様変更があったときに、修正箇所の特定も早く行える。
  */
 public class Main {
+
   public static void main(String[] args) {
     int daysLate = 3;
 
@@ -40,8 +41,11 @@ public class Main {
     Book book = new Book();
     Comic comic = new Comic();
     Dvd dvd = new Dvd();
-    System.out.println("[" + book.name()  + "] 延滞" + daysLate + "日 → " + book.calcFine(daysLate)  + "円");
-    System.out.println("[" + comic.name() + "] 延滞" + daysLate + "日 → " + comic.calcFine(daysLate) + "円");
-    System.out.println("[" + dvd.name()   + "] 延滞" + daysLate + "日 → " + dvd.calcFine(daysLate)   + "円");
+    System.out.println(
+        "[" + book.name() + "] 延滞" + daysLate + "日 → " + book.calcFine(daysLate) + "円");
+    System.out.println(
+        "[" + comic.name() + "] 延滞" + daysLate + "日 → " + comic.calcFine(daysLate) + "円");
+    System.out.println(
+        "[" + dvd.name() + "] 延滞" + daysLate + "日 → " + dvd.calcFine(daysLate) + "円");
   }
 }

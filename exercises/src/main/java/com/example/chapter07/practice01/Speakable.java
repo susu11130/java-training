@@ -1,6 +1,6 @@
 package com.example.chapter07.practice01;
 
-/**
+/*
  * 鳴けることを示すインターフェース
  */
 public interface Speakable {
