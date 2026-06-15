@@ -32,20 +32,31 @@ package com.example.chapter01;
 */
 public class Kadai03 {
 
-  public static void main(String[] args) {
-    final int battery = 15; // 電池残量
-    final boolean hasCharger = true; // 充電器はあるか
-    final boolean outletAvailable = false; // コンセントは空いているか
+	public static void main(String[] args) {
+		final int battery = 15; // 電池残量
+		final boolean hasCharger = true; // 充電器はあるか
+		final boolean outletAvailable = false; // コンセントは空いているか
 
-    String message; // 出力するメッセージ
+		String message; // 出力するメッセージ
 
-    // 以下を修正してください。
-    if (battery >= 30 || hasCharger || outletAvailable) {
-      message = "プレイ開始";
-    } else {
-      message = "できません: コンセントが空いていません";
-    }
+		// 電池残量の判定
+		if (battery >= 30) {
+			message = "プレイ開始";
+		} else {
+			// 充電器の残量を判定
+			if (hasCharger) {
+				// コンセントの空きを判定
+				if (outletAvailable) {
+					message = "できません：　コンセントが空いていません";
+				} else {
+					message = "できません：　コンセントが空いていません";
+				}
 
-    System.out.println(message);
-  }
+			} else {
+				message = "できません：充電器がありません";
+			}
+		}
+
+		System.out.println(message);
+	}
 }

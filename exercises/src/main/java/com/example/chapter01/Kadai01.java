@@ -23,7 +23,7 @@ public class Kadai01 {
     double attendance = 0.7;
 
     String result;
-    if (score >= 60 || attendance >= 0.8) {
+    if (score >= 60 && attendance >= 0.8) {
       result = "合格";
     } else {
       result = "不合格";

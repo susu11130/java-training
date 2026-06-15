@@ -25,25 +25,16 @@ public class Kadai06 {
   public static void main(String[] args) {
     final String signal = "RED";
 
-    // 以下の if ～ else の判定を switch式 に書き換えてください。
-    String action;
+	// 以下の if ～ else の判定を switch式 に書き換えてください。
+	String action;
 
-    if ("GREEN".equals(signal)) {
-      action = "進む";
-    } else if ("YELLOW".equals(signal)) {
-      action = "注意して進む";
-    } else if ("RED".equals(signal)) {
-      action = "止まる";
-    } else {
-      action = "不明";
-    }
+	action = switch (signal) {
+	case "GREEN" -> "進む";
+	case "YELLO" -> "注意して止まるr";
+	case "RED" -> "止まる";
+	default -> "不明";
+	};
 
-    System.out.println("行動: " + action);
+	System.out.println("行動: " + action);
   }
 }
-
-
-
-
-
-

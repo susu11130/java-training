@@ -37,9 +37,7 @@ public class Kadai02 {
     // 年齢別の運賃計算
     if (age <= 5) {
       fare = 0;
-    } else if (age >= 13) {
-      fare = baseFare;
-    } else if (age >= 6) {
+    } else if (age <= 12) {
       fare = (int) (baseFare * 0.5);
     } else if (age >= 65) {
       fare = (int) (baseFare * 0.8);

@@ -47,29 +47,53 @@ public class Kadai07 {
         age変数の値をもとに、ageGroupName変数に"乳幼児" | "こども" | "おとな" | "シニア" のいずれかを
         代入する処理を書いてください。
     */
-
-
-
+	if (age <= 5) {
+		ageGroupName = "乳幼児";
+	} else if (age <= 12) {
+		ageGroupName = "こども";
+	} else if (age <= 64) {
+		ageGroupName = "おとな";
+	} else {
+		ageGroupName = "シニア";
+	}
     /*
         この下に、switch式 を使用して、
         ageGroupName変数の値をもとに、basePrice変数に基本料金を代入する処理を書いてください。
     */
-    int basePrice = 0; // 基本料金
+	int basePrice = 0; // 基本料金
+	basePrice = switch (ageGroupName) {
+	case "乳幼児" -> 0;
+	case "こども" -> 2000;
+	case "おとな" -> 4000;
+	default -> 2500;
+	};
 
+	/*
+	 * この下に、割引の判定処理を書いてください。basePrice が 0 のときは割引しません。 ▼ヒント 1) isRain が true（雨）なら： -
+	 * hasCoupon が true → finalPrice = (int)(finalPrice * 0.7); // 30%引き - hasCoupon
+	 * が false → finalPrice = (int)(finalPrice * 0.9); // 10%引き ※必ず「雨か？」の if
+	 * の内側で「クーポンある？」を判定する（if のネスト必須） 2) isRain が false（雨でない）なら： - day が "平日" かつ
+	 * entryHour >= 15 → finalPrice = (int)(finalPrice * 0.8); // 20%引き - それ以外 →
+	 * 割引なし
+	 */
+	int finalPrice = basePrice;
 
-
-    /*
-        この下に、割引の判定処理を書いてください。basePrice が 0 のときは割引しません。
-        ▼ヒント
-          1) isRain が true（雨）なら：
-               - hasCoupon が true  → finalPrice = (int)(finalPrice * 0.7);  // 30%引き
-               - hasCoupon が false → finalPrice = (int)(finalPrice * 0.9);  // 10%引き
-             ※必ず「雨か？」の if の内側で「クーポンある？」を判定する（if のネスト必須）
-          2) isRain が false（雨でない）なら：
-               - day が "平日" かつ entryHour >= 15 → finalPrice = (int)(finalPrice * 0.8); // 20%引き
-               - それ以外 → 割引なし
-    */
-    int finalPrice = basePrice;
+	if (basePrice != 0) {
+		// 雨の日か判定
+		if (isRain) {
+			// クーポン所持しているか判定
+			if (hasCoupon) {
+				finalPrice = (int) (finalPrice * 0.7);
+			} else {
+				finalPrice = (int) (finalPrice * 0.9);
+			}
+		} else {
+			// 平日かつ入場時間が15時以降の場合
+			if (day.equals("平日") && entryHour >= 15) {
+				finalPrice = (int) (finalPrice * 0.8);
+			}
+		}
+	}
 
     System.out.println("最終価格: " + finalPrice + "円");
   }

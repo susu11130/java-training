@@ -25,11 +25,7 @@ public class Kadai04 {
 
     // 以下の条件式の間違いを正し、また三項演算子に書き換えてください。
     String rank;
-    if (amount > 1000) {
-      rank = "S";
-    } else {
-      rank = "A";
-    }
+    rank = (amount >= 1000 ? "S" : "A");
 
     System.out.println("ランク: " + rank);
   }
