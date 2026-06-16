@@ -29,10 +29,10 @@ public class Kadai06 {
 	String action;
 
 	action = switch (signal) {
-	case "GREEN" -> "進む";
-	case "YELLO" -> "注意して止まるr";
-	case "RED" -> "止まる";
-	default -> "不明";
+		case "GREEN" -> "進む";
+		case "YELLO" -> "注意して止まるr";
+		case "RED" -> "止まる";
+		default -> "不明";
 	};
 
 	System.out.println("行動: " + action);

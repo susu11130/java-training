@@ -28,20 +28,20 @@ public class Kadai05 {
 		String season;
 
 		switch (month) {
-		case 3, 4, 5:
-			season = "春";
-			break;
-		case 6, 7, 8:
-			season = "夏";
-			break;
-		case 9, 10, 11:
-			season = "秋";
-			break;
-		case 12, 1, 2:
-			season = "冬";
-			break;
-		default:
-			season = "不明";
+			case 3, 4, 5:
+				season = "春";
+				break;
+			case 6, 7, 8:
+				season = "夏";
+				break;
+			case 9, 10, 11:
+				season = "秋";
+				break;
+			case 12, 1, 2:
+				season = "冬";
+				break;
+			default:
+				season = "不明";
 		}
 
 		System.out.println("季節: " + season);
