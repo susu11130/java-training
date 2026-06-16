@@ -47,7 +47,7 @@ public class Kadai03 {
 			if (hasCharger) {
 				// コンセントの空きを判定
 				if (outletAvailable) {
-					message = "できません：　コンセントが空いていません";
+					message = "充電してからプレイOK";
 				} else {
 					message = "できません：　コンセントが空いていません";
 				}

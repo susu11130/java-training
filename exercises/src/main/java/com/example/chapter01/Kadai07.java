@@ -62,10 +62,10 @@ public class Kadai07 {
     */
 	int basePrice = 0; // 基本料金
 	basePrice = switch (ageGroupName) {
-	case "乳幼児" -> 0;
-	case "こども" -> 2000;
-	case "おとな" -> 4000;
-	default -> 2500;
+		case "乳幼児" -> 0;
+		case "こども" -> 2000;
+		case "おとな" -> 4000;
+		default -> 2500;
 	};
 
 	/*
