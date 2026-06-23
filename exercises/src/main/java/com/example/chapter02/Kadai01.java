@@ -22,7 +22,7 @@ public class Kadai01 {
     double max = 0;
 
     for (int i = 0; i < temps.length; i++) {
-      if (max > temps[i]) {
+      if (max < temps[i]) {
         max = temps[i];
       }
     }

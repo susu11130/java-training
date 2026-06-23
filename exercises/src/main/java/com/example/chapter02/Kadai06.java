@@ -24,6 +24,13 @@ public class Kadai06 {
   public static void main(String[] args) {
     String[] fruits = {"りんご:5", "バナナ:2", "みかん:10", "いちご:1"};
 
-    // ここに拡張for文を書いて完成させる
-  }
+		// ここに拡張for文を書いて完成させる
+		for (String item : fruits) {
+			String[] fruitStr = item.split(":");
+			// 果物の個数が３以下は在庫わずかと表示
+			if (Integer.parseInt(fruitStr[1]) <= 3) {
+				System.out.println("在庫わずか: " + fruitStr[0] + "（" + fruitStr[1] + "個）");
+			}
+		}
+	}
 }
