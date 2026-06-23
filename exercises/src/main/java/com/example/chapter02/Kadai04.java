@@ -21,5 +21,12 @@ public class Kadai04 {
     int[] scores = {100, 80, 90, 70, 90};
 
     // ここに処理を書いて完成させる
+		int total = 0;
+		int average = 0;
+		for (int item : scores) {
+			total += item;
+		}
+		System.out.println("合計:" + total);
+		System.out.println("平均:" + total / scores.length);
   }
 }

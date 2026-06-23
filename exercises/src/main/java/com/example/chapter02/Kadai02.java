@@ -33,15 +33,21 @@ public class Kadai02 {
     int validCount = 0;   // 有効点数の件数
     int invalidCount = 0; // 無効点数の件数
 
-    for (int s : scores) {
-      sum += s;
-      validCount++;
+		for (int s : scores) {
+			// 点数が「0〜100」の範囲外であれば無効点数をカウントし、次のループへ
+			if (!(0 < s && s <= 100)) {
+				invalidCount++;
+				continue;
+			}
+			sum += s;
+			validCount++;
+      // 60点以上の場合、合格者数をカウントする
       if (s >= 60) {
         passedCount++;
       }
     }
 
-    int avg = sum / scores.length;
+    int avg = sum / validCount;
 
     System.out.println("平均: " + avg);
     System.out.println("合格者数: " + passedCount);

@@ -23,8 +23,8 @@ public class Kadai03 {
     int[] stocks = {5, 3, 2, 6, 5};
     int total = 0;
 
-    for (int i = 0; i <= stocks.length; i++) {
-      total = +stocks[i];
+    for (int i = 0; i <= stocks.length - 1; i++) {
+      total += stocks[i];
     }
 
     System.out.println("在庫の合計: " + total);
