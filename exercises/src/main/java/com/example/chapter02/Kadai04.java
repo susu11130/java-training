@@ -22,7 +22,6 @@ public class Kadai04 {
 
     // ここに処理を書いて完成させる
 		int total = 0;
-		int average = 0;
 		for (int item : scores) {
 			total += item;
 		}

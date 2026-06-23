@@ -36,13 +36,11 @@ public class Kadai05 {
 			// 偶数の場合は処理終了
 			if (numbers[i] % 2 == 0) {
 				System.out.println("→ 最初の偶数は " + numbers[i] + " でした");
-				break;
+				return;
 			}
 			i++;
 		}
 		// 最後まで偶数が見つからない場合はメッセージ表示
-		if (i == numbers.length) {
-			System.out.println("→ 偶数は見つかりませんでした");
-		}
+		System.out.println("→ 偶数は見つかりませんでした");
   }
 }

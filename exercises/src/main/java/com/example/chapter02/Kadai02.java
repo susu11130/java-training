@@ -35,7 +35,7 @@ public class Kadai02 {
 
 		for (int s : scores) {
 			// 点数が「0〜100」の範囲外であれば無効点数をカウントし、次のループへ
-			if (!(0 < s && s <= 100)) {
+			if (s < 0 || s > 100) {
 				invalidCount++;
 				continue;
 			}
