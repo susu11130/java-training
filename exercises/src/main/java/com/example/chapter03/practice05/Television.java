@@ -46,7 +46,7 @@ public class Television {
 	}
 
 	/**
-	 * 仕様：volume に delta を加算し、結果を 0〜100 に収める
+	 * 仕様：volume に delta を加算し、結果を 0〜100 に収める。範囲内であればそのまま代入する
 	 * 
 	 * @param delta
 	 */
@@ -61,7 +61,7 @@ public class Television {
 			this.volume = 100;
 			return;
 		}
-		this.volume = delta;
+		this.volume += delta;
 	}
 
 	/**

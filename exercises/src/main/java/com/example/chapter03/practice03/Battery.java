@@ -65,6 +65,6 @@ public class Battery {
 	 * @return
 	 */
 	public String label() {
-		return "バッテリー；　" + this.percentage + "%";
+		return "バッテリー:　" + this.percentage + "%";
 	}
 }
