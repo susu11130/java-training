@@ -27,6 +27,44 @@ public class Battery {
           フィールドに代入することを指します。
           例）0 未満は 0、100 超えは 100、それ以外はそのまま代入する
      */
+		// 0 未満は 0を代入
+		if (initial < 0) {
+			this.percentage = 0;
+			return;
+		}
+		// 100 超えは 100を代入
+		if (initial > 100) {
+			this.percentage = 100;
+			return;
+		}
     this.percentage = initial; // ここを修正する
-  }
+	}
+
+	/**
+	 * バッテリー残量にチャージ残量を加算
+	 * 
+	 * @param percent チャージ残量
+	 */
+	public void charge(int percent) {
+		// 0未満は0をセット（上段でも判定済）
+		if (this.percentage + percent < 0) {
+			this.percentage = 0;
+			return;
+		}
+		// 合計が100超はバッテリー残量を100にする
+		if (this.percentage + percent > 100) {
+			this.percentage = 100;
+			return;
+		}
+		this.percentage += percent;
+	}
+
+	/**
+	 * 現在の残量を「バッテリー: X%」の形式で表示
+	 * 
+	 * @return
+	 */
+	public String label() {
+		return "バッテリー:　" + this.percentage + "%";
+	}
 }
