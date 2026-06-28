@@ -8,7 +8,7 @@ public class TrafficLight {
   /**
    * 現在の色（"赤" / "黄" / "青"）
    */
-  public String color;
+  private String color;
 
   /**
    * 初期色を指定して信号機を作ります。
@@ -16,7 +16,7 @@ public class TrafficLight {
    * @param initialColor 初期色（"赤" / "黄" / "青"）
    */
   public TrafficLight(String initialColor) {
-    this.color = "赤";
+    this.color = initialColor;
   }
 
   /**
@@ -24,6 +24,17 @@ public class TrafficLight {
    */
   public void next() {
     // 実装する。
+  	switch (this.color) {
+	  	case "赤":
+	  		this.color = "青";
+	  		break;
+	  	case "青":
+	  		this.color = "黄";
+	  		break;
+	  	case "黄":
+	  		this.color = "赤";
+	  		break;
+  	}
   }
 
   /**
@@ -32,6 +43,6 @@ public class TrafficLight {
    * @return 表示用の文字列
    */
   public String label() {
-    return "信号"; // ← 不具合：色が出ていない（直す）
+    return "信号: " + this.color ;
   }
 }

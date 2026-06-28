@@ -14,7 +14,7 @@ public class PiggyBank {
   /**
    * 合計金額（円）
    */
-  public int amountYen;
+  private int amountYen;
 
   /**
    * 持ち主の名前を指定して貯金箱を作ります。
@@ -32,7 +32,7 @@ public class PiggyBank {
    * @param yen 入れる金額（円）
    */
   public void deposit(int yen) {
-    this.amountYen = yen;
+    this.amountYen += yen;
   }
 
   /**
@@ -41,6 +41,6 @@ public class PiggyBank {
    * @return 表示用の文字列
    */
   public String label() {
-    return this.ownerName;
+    return this.ownerName + ": " + this.amountYen + "円";
   }
 }

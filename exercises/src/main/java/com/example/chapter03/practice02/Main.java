@@ -32,8 +32,13 @@ class Main {
 
     // 以下にあなた自身でコードを追加してください。
     // 2つ目：青で作って1回進める → 黄になる（期待: 信号: 黄）
+    TrafficLight t2 = new TrafficLight("青");
+    t2.next();
+    System.out.println(t2.label());
 
     // 3つ目：黄で作って1回進める → 赤になる（期待: 信号: 赤）
-
+    TrafficLight t3 = new TrafficLight("黄");
+    t3.next();
+    System.out.println(t3.label());
   }
 }
